@@ -54,7 +54,6 @@
     html,body{
         font-family: 'euclidReqular','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    
     ul{
         padding: 0;
     }
@@ -69,7 +68,7 @@
 }
 
 @layer utilities {
-    .screenContainer {
+    .screen_main {
         background-image: url('/images/modeling-2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
