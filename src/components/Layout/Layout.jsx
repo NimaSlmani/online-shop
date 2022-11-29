@@ -5,6 +5,7 @@ const Layout = ({children}) => {
   return (
     <div className='w-full overflow-x-hidden'>
         <Header/>
+        {children}
     </div>
   )
 }

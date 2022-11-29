@@ -1,8 +1,8 @@
 
 const Screen = () => {
   return (
-    <div className="">
-
+    <div className="screenContainer">
+        <div className="overlay_screen"></div>
     </div>
   )
 }
