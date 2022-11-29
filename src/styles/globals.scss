@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'euclidReqular';
+    src: url('../../public/fonts/Euclid\ Circular\ A\ Regular.ttf');
+}
+@font-face {
+    font-family: 'euclidBold';
+    src: url('../../public/fonts/Euclid\ Circular\ A\ Bold.ttf');
+}
+@font-face {
+    font-family: 'robotoReqular';
+    src: url('../../public/fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'robotoMedium';
+    src: url('../../public/fonts/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: 'robotoBold';
+    src: url('../../public/fonts/Roboto-Bold.ttf');
+}
+
+@layer components {
+    .social-media {
+        @apply border-[1px] border-yellow-200 w-[40px] h-[40px] flex justify-center items-center text-yellow-200 rounded-full relative hover:border-none hover:text-black-200 transition-all;
+        &::before{
+            content: '';
+            @apply bg-yellow-200 absolute w-[50%] h-[50%] rounded-full transition-all opacity-0 duration-[.4s]
+        }
+        &:hover{
+            &::before{
+                @apply w-full h-full opacity-100;
+            }
+        }
+        svg{
+            @apply transition-all z-10
+        }
+    }
+    .verticalText {
+        writing-mode: vertical-lr;
+    }
+}
+
+@layer base {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html,body{
+        font-family: 'euclidReqular','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    ul{
+        padding: 0;
+    }
+    
+    li{
+        list-style: none;
+    }
+    
+    input,button{
+        outline: none;
+    }
+}
+
+@layer utilities {
+    .screenContainer {
+        background-image: url('/images/modeling-2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center; */
+        @apply w-full min-h-screen	relative overflow-hidden flex justify-between flex-col  md:text-left  lg:bg-none;
+    }
+    .overlay_screen{
+        @apply absolute w-full h-full top-0 left-0 opacity-80 lg:opacity-100;
+        background: linear-gradient(118deg, rgba(255,57,84,1) 0%, rgba(241,0,32,1) 100%);
+    }
+    .borderGray {
+        @apply border-b-[1px] border-gray-300
+    }
+    .gradient_oreantation {
+        background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(252,252,252,1) 50%, rgba(255,255,135,1) 50%, rgba(255,255,135,1) 100%);
+    }
+    .gradient_vertical {
+        background: linear-gradient(0deg, rgba(252,252,252,1) 0%, rgba(252,252,252,1) 50%, rgba(255,255,135,1) 50%, rgba(255,255,135,1) 100%);
+    }
+
+}
