@@ -73,7 +73,7 @@
         background-image: url('/images/modeling-2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        /* background-position: center; */
+        background-position: center; 
         @apply w-full min-h-screen	relative overflow-hidden flex justify-between flex-col  md:text-left  lg:bg-none;
     }
     .overlay_screen{

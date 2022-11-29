@@ -39,7 +39,7 @@ const Header_nav = () => {
       <div className='hidden lg:block'>
         <Cart/>
       </div>
-      <nav className='text-12 lg:w-7/12'>
+      <nav className='text-14 lg:w-7/12'>
         <ul className='flex text-pink-200 justify-between'>
           <li>
             <Link href='/' className='hover:text-gray-100'>Home</Link>
