@@ -42,6 +42,15 @@
     .verticalText {
         writing-mode: vertical-lr;
     }
+    .arrow_button{
+        @apply w-[50px] h-[50px] border-[1.5px] border-pink-500  flex justify-center items-center text-pink-500 cursor-pointer relative
+        before:content-[''] before:w-[50%] before:h-[50%] before:absolute before:bg-pink-500 before:opacity-0 before:transition-all
+        hover:before:w-full hover:before:h-full hover:before:opacity-100
+        hover:border-0 hover:text-white;
+        svg{
+            @apply z-10
+        }
+    }
 }
 
 @layer base {

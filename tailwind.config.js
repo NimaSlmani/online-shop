@@ -1,3 +1,5 @@
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -53,7 +55,7 @@ module.exports = {
         40 : '40px',
         45 : '45px',
         50 : '50px'
-      }
+      },
     },
   },
   plugins: [],
