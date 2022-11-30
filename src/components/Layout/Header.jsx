@@ -27,7 +27,7 @@ const User_link = () => {
 const Header_sm = () => {
   return (
     <div className='flex justify-between items-center border-b-[1px] border-pink-300 pb-[15px] md:hidden'>
-      <Image width={40} height={40} src='/logo.svg' />
+      <Image width={40} height={40} src='/logo.svg' alt='uiminut' />
       <BsTextRight className='text-yellow-200' size={20}/>
     </div>
   )
@@ -79,7 +79,7 @@ const Header_md_lg = () => {
     <div className='hidden md:block'>
       <div className='flex justify-between items-center lg:justify-center'>
         <div className='lg:hidden'><Cart/></div>
-        <Image width={55} height={55} src='/logo.svg' />
+        <Image width={55} height={55} src='/logo.svg' alt='uiminut' />
         <div className='lg:hidden'><User_link/></div>
       </div>
       <Header_nav/>

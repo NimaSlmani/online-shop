@@ -11,7 +11,7 @@ import Card_fill from '../../components/Cards/Card_fill'
 
 import Image from 'next/image';
 
-const Pattern = () => <Image src='/patterns/gray.svg' alt='uiminut' width={300} height={400} className="w-[450px] absolute right-[0px] bottom-[-100px] hidden lg:block"/>
+const Pattern = () => <Image src='/patterns/gray.svg' alt='uiminut' width={300} height={400} className="w-[450px] absolute right-[0px] bottom-[-140px] hidden lg:block"/>
 
 const Latest_products = () => {
     let navigationPrevRef = useRef(null)
@@ -19,11 +19,13 @@ const Latest_products = () => {
     let [slide,setSlide] = useState(1)
     SwiperCore.use([Autoplay]);
     useLayoutEffect(()=>{
-        if(window.innerWidth >= 640 && window.innerWidth <= 1024 || window.innerWidth >= 1366){
+        if(window.innerWidth >= 992 && window.innerWidth <= 1024 || window.innerWidth >= 1366){
             setSlide(3)  
         }else if(window.innerWidth <=640){
             setSlide(1)
         }else if(window.innerWidth >= 1024 && window.innerWidth <= 1366){
+            setSlide(2)
+        }else if(window.innerWidth >=640 && window.innerWidth <=992){
             setSlide(2)
         }
     },[])
@@ -66,40 +68,16 @@ const Latest_products = () => {
                         }}
                     >
                         <SwiperSlide>
-                            <Card_fill imageSize='160'/>
+                            <Card_fill type='dress' src='/product-1.png' imageSize='160'/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card_fill imageSize='160'/>
+                            <Card_fill type='dress' src='/product-1.png' imageSize='160'/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card_fill imageSize='160'/>
+                            <Card_fill type='dress' src='/product-1.png' imageSize='160'/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card_fill imageSize='160'/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card_fill imageSize='160'/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card_fill imageSize='160'/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card_fill imageSize='160'/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card_fill imageSize='160'/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card_fill imageSize='160'/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card_fill imageSize='160'/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card_fill imageSize='160'/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card_fill imageSize='160'/>
+                            <Card_fill type='dress' src='/product-1.png' imageSize='160'/>
                         </SwiperSlide>
                     </Swiper>
               </div>
