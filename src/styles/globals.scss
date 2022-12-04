@@ -23,36 +23,6 @@
     src: url('../../public/fonts/Roboto-Bold.ttf');
 }
 
-@layer components {
-    .social-media {
-        @apply border-[1px] border-yellow-200 w-[40px] h-[40px] flex justify-center items-center text-yellow-200 rounded-full relative hover:border-none hover:text-black-200 transition-all;
-        &::before{
-            content: '';
-            @apply bg-yellow-200 absolute w-[50%] h-[50%] rounded-full transition-all opacity-0 duration-[.4s]
-        }
-        &:hover{
-            &::before{
-                @apply w-full h-full opacity-100;
-            }
-        }
-        svg{
-            @apply transition-all z-10
-        }
-    }
-    .verticalText {
-        writing-mode: vertical-lr;
-    }
-    .arrow_button{
-        @apply w-[50px] h-[50px] border-[1.5px] border-pink-500  flex justify-center items-center text-pink-500 cursor-pointer relative
-        before:content-[''] before:w-[50%] before:h-[50%] before:absolute before:bg-pink-500 before:opacity-0 before:transition-all
-        hover:before:w-full hover:before:h-full hover:before:opacity-100
-        hover:border-0 hover:text-white;
-        svg{
-            @apply z-10
-        }
-    }
-}
-
 @layer base {
     *{
         padding: 0;
@@ -76,6 +46,82 @@
     }
 }
 
+@layer components {
+    .social-media {
+        @apply border-[1px] border-yellow-200 w-[40px] h-[40px] flex justify-center items-center text-yellow-200 rounded-full relative hover:border-none hover:text-black-200 transition-all;
+        &::before{
+            content: '';
+            @apply bg-yellow-200 absolute w-[50%] h-[50%] rounded-full transition-all opacity-0 duration-[.4s]
+        }
+        &:hover{
+            &::before{
+                @apply w-full h-full opacity-100;
+            }
+        }
+        svg{
+            @apply transition-all z-10
+        }
+    }
+    .verticalText {
+        writing-mode: vertical-lr;
+    }
+}
+@layer components {
+    .arrow_button{
+        @apply w-[50px] h-[50px] border-[1.5px] border-pink-500  flex justify-center items-center text-pink-500 cursor-pointer relative
+        before:content-[''] before:w-[50%] before:h-[50%] before:absolute before:bg-pink-500 before:opacity-0 before:transition-all
+        hover:before:w-full hover:before:h-full hover:before:opacity-100
+        hover:border-0 hover:text-white;
+        svg{
+            @apply z-10
+        }
+    }
+}
+@layer components {
+    .arrow_button_yellow{
+        @apply w-[50px] h-[50px] border-[1.5px] border-yellow-200  flex justify-center items-center text-yellow-100 cursor-pointer relative
+        before:content-[''] before:w-[50%] before:h-[50%] before:absolute before:bg-yellow-200 before:opacity-0 before:transition-all
+        hover:before:w-full hover:before:h-full hover:before:opacity-100
+        hover:border-0 hover:text-pruple-200;
+        svg{
+            @apply z-10
+        }
+    }
+}
+@layer components{
+    .card-border{
+        h3{
+            border: none;
+            padding-bottom: 0;
+            transition: all .3s ease-in-out;
+        }
+        @apply border-[1.5px] border-gray-400 p-[15px] transition-all relative text-gray-400 overflow-hidden;
+    }
+    .overlay-card-border{
+        @apply absolute w-full h-full bg-gray-500 left-0 bottom-[-100%] z-[8] transition-all duration-[.3s] flex items-end
+    }
+    .card-border:hover{
+        h3{
+            @apply text-pruple-200 z-0;
+        }
+        .overlay-card-border{
+            @apply bottom-0
+        }
+    }
+}
+@layer components{
+    .top_scroll_button{
+        @apply w-[40px] h-[40px] border-[1.5px] rounded-full border-yellow-200 flex justify-center items-center text-yellow-200 backdrop-blur-[2px] bg-black-300 relative cursor-pointer
+        before:content-[''] before:w-[50%] before:h-[50%] before:bg-yellow-200 before:rounded-full before:absolute before:z-0 before:transition-all before:opacity-0
+        hover:before:opacity-100 hover:before:w-full hover:before:h-full
+        hover:border-0 hover:text-pruple-200
+        ; 
+
+        svg{
+            @apply z-10
+        }
+    }
+}
 @layer utilities {
     .screen_main {
         background-image: url('/images/modeling-2.jpg');
@@ -91,11 +137,12 @@
     .borderGray {
         @apply border-b-[1px] border-gray-300
     }
-    .gradient_oreantation {
-        background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(252,252,252,1) 50%, rgba(255,255,135,1) 50%, rgba(255,255,135,1) 100%);
-    }
-    .gradient_vertical {
+    .gradient_white_yellow {
         background: linear-gradient(0deg, rgba(252,252,252,1) 0%, rgba(252,252,252,1) 50%, rgba(255,255,135,1) 50%, rgba(255,255,135,1) 100%);
     }
-
+    @media only screen and (min-width: 1024px){
+        .gradient_white_yellow{
+            background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(252,252,252,1) 50%, rgba(255,255,135,1) 50%, rgba(255,255,135,1) 100%);
+        }
+    }
 }

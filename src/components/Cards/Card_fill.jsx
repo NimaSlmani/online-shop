@@ -15,10 +15,10 @@ const Card_fill = ({imageSize,src,type,icon}) => {
         }
         <SlHeart size={20} className="text-pink-500 cursor-pointer transition-all hover:text-pruple-200 absolute top-[30px] right-[30px]"/>
         <div className={`w-[${imageSize}px] overflow-hidden`}>
-            <Image alt="online shop" src={src} width={160} height={180} className="w-full h-auto"/>
+            <Image alt="online shop" src={src} width={imageSize} height={180} className="w-full h-auto"/>
         </div>
         <div className="w-full">
-          <Secondary_Title text='Adilette Clogs' />
+          <Secondary_Title text='Adilette Clogs' cls='text-black-200' />
           <div className="flex justify-between w-full mt-[15px]">
               <Operator_Button Icon={BsPlus}/>
               <p className="text-18 font-robotoMedium text-pruple-200">Price : $40000</p>

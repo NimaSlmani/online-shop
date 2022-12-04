@@ -4,6 +4,9 @@ import Screen from '../sections/home/Screen'
 import Quick_links from '../sections/home/Quick_links'
 import Latest_products from '../sections/home/Latest_products'
 import Shoes from '../sections/home/Shoes'
+import Suggested_products from '../sections/home/Suggested_products'
+import Offers from '../sections/home/Offers'
+import Shirts from '../sections/home/Shirts'
 
 let Home = () => {
   let {arrow_left_slider} = useSelector(state => state.style)
@@ -16,6 +19,9 @@ let Home = () => {
         <Quick_links/>        
         <Latest_products/>
         <Shoes/>
+        <Suggested_products/>
+        <Offers/>
+        <Shirts/>
       </Layout>
     </>
   )
