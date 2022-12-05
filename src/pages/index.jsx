@@ -19,9 +19,9 @@ let Home = () => {
         <Quick_links/>        
         <Latest_products/>
         <Shoes/>
-        {/* <Suggested_products/>
+        <Suggested_products/>
         <Offers/>
-        <Shirts/> */}
+        <Shirts/>
       </Layout>
     </>
   )
