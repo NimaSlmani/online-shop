@@ -15,7 +15,7 @@ const Layout = ({children,title}) => {
         <div className='w-full overflow-x-hidden'>
           <Header/>
           {children}
-          <Footer/>
+          {/* <Footer/> */}
         </div>
     </>
     
