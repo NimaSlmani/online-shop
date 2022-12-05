@@ -21,7 +21,7 @@ const Section = () => {
   }
   return (
     <div className='flex flex-col items-center'>
-      <h3 className='text-35 text-center font-euclidBold leading-[45px] md:text-40'>Special Sale Of Men's Shirts</h3>
+      <h3 className='text-35 text-center font-euclidBold leading-[45px] md:text-40'>Special Sale Of Men&apos;s Shirts</h3>
       <Swiper
          effect={"cards"}
          grabCursor={true}

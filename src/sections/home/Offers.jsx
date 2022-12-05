@@ -73,7 +73,7 @@ const Slider_lg = () => {
         }
     },[])
     const params = {
-        spaceBetween: 0,
+        spaceBetween: 200,
         slidesPerView:slide,
         loop : true,
         autoplay: {
@@ -84,7 +84,7 @@ const Slider_lg = () => {
     return (
         <div className='hidden pt-[30px] relative lg:block'>
             <p className='left-[25.5%] absolute text-14 font-robotoReqular'>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod <br/> Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad.</p>
-            <div className='absolute right-0'>
+            <div className='absolute right-0 z-20'>
                 <div className='mb-[15px] arrow_button' ref={navigationPrevRef}><BsChevronUp/></div>
                 <div className='arrow_button' ref={navigationNextRef}><BsChevronDown/></div>
             </div>
@@ -126,7 +126,7 @@ const Offers = () => {
     <Container>
         <Pattern/>
         <ModelingImage/>
-        <Primary_Title text='Special Sale Of Men s Shirts'/>        
+        <Primary_Title text='Special Sale Of Men&apos;s Shirts'/>        
         <Slider_sm_md/>
         <Slider_lg/>
     </Container>
