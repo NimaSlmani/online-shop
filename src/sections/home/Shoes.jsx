@@ -40,7 +40,7 @@ const Shoes = () => {
         }
     }
   return (
-    <Container>
+    <Container pId='Shoes'>
         <Pattern/>
         <div className='lg:flex lg:items-stretch'>
             {/* content-text */}

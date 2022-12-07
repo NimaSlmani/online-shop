@@ -28,8 +28,11 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        scroll-behaviour: smooth;
     }
-    
+    html {
+        scroll-behaviour: smooth;
+       }
     html,body{
         font-family: 'euclidReqular','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
@@ -111,12 +114,11 @@
 }
 @layer components{
     .top_scroll_button{
-        @apply w-[40px] h-[40px] border-[1.5px] rounded-full border-yellow-200 flex justify-center items-center text-yellow-200 backdrop-blur-[2px] bg-black-300 relative cursor-pointer
-        before:content-[''] before:w-[50%] before:h-[50%] before:bg-yellow-200 before:rounded-full before:absolute before:z-0 before:transition-all before:opacity-0
+        @apply w-[40px] h-[40px] border-[1.5px] rounded-full border-pink-500 flex justify-center items-center text-pink-500 backdrop-blur-[20px] bg-gray-alpha-100 cursor-pointer fixed bottom-[30px] right-[30px] z-20
+        before:content-[''] before:w-[50%] before:h-[50%] before:bg-pink-500 before:rounded-full before:absolute before:z-0 before:transition-all before:opacity-0
         hover:before:opacity-100 hover:before:w-full hover:before:h-full
-        hover:border-0 hover:text-pruple-200
+        hover:border-0 hover:text-gray-200
         ; 
-
         svg{
             @apply z-10
         }

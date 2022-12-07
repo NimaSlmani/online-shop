@@ -39,7 +39,7 @@ const Latest_products = () => {
         }
     }
     return (
-      <Container bg='bg-gray-100'>
+      <Container bg='bg-gray-100' pId='Lates-products'>
           <Pattern/>
           <div className='lg:flex lg:flex-row-reverse'>
               {/* content-text */}

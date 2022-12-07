@@ -1,9 +1,13 @@
+import { useSelector } from 'react-redux'
+
 import Head from 'next/head'
 
 import Header from './Header'
 import Footer from './Footer'
+import Menu from './Menu'
 
 const Layout = ({children,title}) => {
+  let { open_sidebar } = useSelector(state => state.style)
   return (
     <>
         <Head>
@@ -12,6 +16,7 @@ const Layout = ({children,title}) => {
           <meta name="theme-color" content="rgba(255,57,84,1)" />
           <title>{title}</title>
         </Head>
+        <Menu/>
         <div className='w-full overflow-x-hidden'>
           <Header/>
           {children}

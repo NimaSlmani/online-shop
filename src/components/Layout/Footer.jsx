@@ -1,4 +1,4 @@
-import { BsChevronUp,BsFillCartFill,BsFillHouseFill,BsFillTelephoneFill,BsTextRight,BsHandbag } from "react-icons/bs"
+import { BsFillCartFill,BsFillHouseFill,BsFillTelephoneFill,BsTextRight,BsHandbag } from "react-icons/bs"
 
 import Image from "next/image"
 import Link from "next/link"
@@ -55,7 +55,6 @@ const Menu_md_lg = () => {
 const Footer = () => {
   return (
     <footer className="bg-pink-500 text-pink-200 w-full p-[30px] relative">
-      <div className="top_scroll_button top-[30px] right-[30px] absolute md:top-[-20px]"><BsChevronUp/></div>
       <div className="pb-[15px] w-full border-b-[1px] border-pink-300 justify-between items-center md:flex lg:border-0 lg:pb-0">
         <Image width={40} height={40} src='/logo.svg' alt="uiminut" className="h-[40px]"/>
         <div className="hidden w-7/12 lg:block">

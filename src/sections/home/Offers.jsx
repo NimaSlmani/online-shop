@@ -123,7 +123,7 @@ const Slider_lg = () => {
 
 const Offers = () => {
   return (
-    <Container>
+    <Container pId='Offers'>
         <Pattern/>
         <ModelingImage/>
         <Primary_Title text='Special Sale Of Men&apos;s Shirts'/>        

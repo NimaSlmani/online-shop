@@ -1,9 +1,12 @@
+import { useDispatch } from 'react-redux'
+import { setOpen_sidebar } from '../../features/slices/style_slice'
+
 import {BsTextRight,BsHandbag} from 'react-icons/bs'
 import {FiHeart,FiUser} from 'react-icons/fi'
 
 import Image from "next/image"
 import Link from 'next/link'
-
+import {Link as ScrollLink} from 'react-scroll'
 const Cart = () => {
   return (
     <div className='flex cursor-pointer'>
@@ -25,10 +28,12 @@ const User_link = () => {
 }
 
 const Header_sm = () => {
+  let dispatch = useDispatch()
+
   return (
     <div className='flex justify-between items-center border-b-[1px] border-pink-300 pb-[15px] md:hidden'>
       <Image width={40} height={40} src='/logo.svg' alt='uiminut' />
-      <BsTextRight className='text-yellow-200' size={20}/>
+      <BsTextRight className='text-yellow-200' size={20} onClick={()=>dispatch(setOpen_sidebar(true))}/>
     </div>
   )
 }
@@ -39,31 +44,31 @@ const Header_nav = () => {
       <div className='hidden lg:block'>
         <Cart/>
       </div>
-      <nav className='text-14 lg:w-7/12'>
+      <nav className='text-14 lg:w-8/12'>
         <ul className='flex text-pink-200 justify-between'>
           <li>
             <Link href='/' className='hover:text-gray-100'>Home</Link>
           </li>
           <li>
-            <Link href='/' className='hover:text-gray-100'>Contact Us</Link>
+            <Link href='/contact-us' className='hover:text-gray-100'>Contact Us</Link>
           </li>
           <li>
-            <Link href='/' className='hover:text-gray-100'>T-shirt</Link>
+            <ScrollLink to='Shirts' offset={100} smooth={true} className='hover:text-gray-100'>T-shirt</ScrollLink>
           </li>
           <li>
-            <Link href='/' className='hover:text-gray-100'>Shirt</Link>
+            <ScrollLink to='Shirts' offset={100} smooth={true} className='hover:text-gray-100'>Shirt</ScrollLink>
           </li>
           <li>
-            <Link href='/' className='hover:text-gray-100'>Pants</Link>
+            <ScrollLink to='Offers' smooth={true} offset={100}  className='hover:text-gray-100'>Discounted products</ScrollLink>
           </li>
           <li>
-            <Link href='/' className='hover:text-gray-100'>Shoe</Link>
+            <ScrollLink to='Shoes' smooth={true} className='hover:text-gray-100'>Shoes</ScrollLink>
           </li>
           <li>
-            <Link href='/' className='hover:text-gray-100'>Suggestions</Link>
+            <ScrollLink to='Suggested-products' smooth={true} offset={100} className='hover:text-gray-100'>Suggestions</ScrollLink>
           </li>
           <li>
-            <Link href='/' className='hover:text-gray-100'>Latest products</Link>
+            <ScrollLink to='Lates-products' offset={50} smooth={true} className='hover:text-gray-100'>Latest products</ScrollLink>
           </li>
         </ul>
       </nav>

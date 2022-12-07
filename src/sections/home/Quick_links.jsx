@@ -12,7 +12,7 @@ let Pattern = () => <Image src='/patterns/yellow.svg' alt='uiminut' width={300} 
 
 const quick_links = () => {
   return (
-    <Container bg='bg-yellow-200'>
+    <Container bg='bg-yellow-200' pId='Quick-links'>
         <Pattern/>
         <div className='lg:flex'>
             <div className='mb-[10px] lg:w-6/12 lg:mb-0'>

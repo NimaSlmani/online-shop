@@ -27,7 +27,10 @@ module.exports = {
           200 : '#F8F8F8',
           300 : '#E8E8E8',
           400 : '#EDE1FF',
-          500 : '#F5EEFF'
+          500 : '#F5EEFF',
+          alpha : {
+            100 : '#ffffff4d'
+          }
         },
         yellow : {
           100 : '#FFFFB0',

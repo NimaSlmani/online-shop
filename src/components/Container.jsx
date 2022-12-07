@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Container = ({children,bg}) => {
+const Container = ({children,bg,pId}) => {
   return (
-    <div className={`w-full py-[100px] px-[30px] md:py-[150px] md:px-[50px] lg:px-[60px] relative overflow-hidden ${bg}`}>{children}</div>
+    <div id={pId} className={`w-full py-[100px] px-[30px] md:py-[150px] md:px-[50px] lg:px-[60px] relative overflow-hidden ${bg}`}>{children}</div>
   )
 }
 
