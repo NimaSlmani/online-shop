@@ -38,11 +38,18 @@ const Suggested_products = () => {
     <Container pId='Suggested-products'>
         <Image src='/images/bg-image.png' width={100}  height={100} className='bg-red-500 w-full h-full absolute left-0 top-0 z-0' alt='uiminut'/>
         <div className='bg-pruple-100 w-full h-full absolute left-0 top-0 z-0'/>
-        <div className='text-center pb-[30px] z-20 relative'>
+        <div className='text-center pb-[30px] z-20 relative'
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+        >
             <h2 className='text-30 leading-[34px] font-euclidBold text-gray-500 md:text-40 md:leading-[45px]'>This Month&apos;s Recommended Products</h2>
             <p className='text-14 font-robotoReqular text-gray-400'>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad.</p>
         </div>
-        <Swiper 
+        <Swiper
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="800"
             className='w-full'
             modules={[Navigation]} {...params}
             

@@ -15,16 +15,16 @@ const quick_links = () => {
     <Container bg='bg-yellow-200' pId='Quick-links'>
         <Pattern/>
         <div className='lg:flex'>
-            <div className='mb-[10px] lg:w-6/12 lg:mb-0'>
+            <div className='mb-[10px] lg:w-6/12 lg:mb-0' data-aos="fade-right">
                 <Primary_Title text='Sunt In Culpa Qui Officia Deserunt'/>
                 <p className='text-14 text-black-100 font-robotoReqular'>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat.</p>
             </div>
-            <div className='lg:w-6/12 flex lg:pl-[15px]'>
+            <div className='lg:w-6/12 flex lg:pl-[15px]' data-aos="fade-left">
                 <div className='w-full md:h-full md:grid md:grid-cols-2 md:gap-x-[15px]'>
-                  <Custome_Link cls='mb-[15px] md:mb-0' icon={<TiStopwatch size={24}/>} text="The Best Selling Results" path='/'/>
-                  <Custome_Link icon={<BsCoin size={24}/>} text="Latest Products" path='/'/>
+                  <Custome_Link cls='mb-[15px] md:mb-0' icon={<TiStopwatch size={24}/>}  text="The Best Selling Results" path='Suggested-products' offset={100}/>
+                  <Custome_Link icon={<BsCoin size={24}/>} text="Latest Products" path='Lates-products' offset={50}/>
                 </div>
-                <Button_Link_Vertical cls='ml-[15px]' path='/' text='Best Products'/>
+                <Button_Link_Vertical cls='ml-[15px]' path='Suggested-products' text='Best Products'/>
             </div>
         </div>
     </Container>

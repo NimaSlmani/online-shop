@@ -42,12 +42,12 @@ const Menu_md_lg = () => {
     <nav className="text-14 font-euclidReqular justify-between w-full hidden md:flex">
       <Link href='/' className="hover:text-white">Home</Link>
       <Link href='/' className="hover:text-white">Contact Us</Link>
-      <ScrollLink to='Shirts' offset={100} smooth={true} className="hover:text-white">T-shirt</ScrollLink>
-      <ScrollLink to='Shirts' offset={100} smooth={true} className="hover:text-white">Shirt</ScrollLink>
-      <ScrollLink to='Offers' smooth={true} offset={100} className="hover:text-white">Discounted products</ScrollLink>
-      <ScrollLink to='Shoes' smooth={true} className="hover:text-white">Shoes</ScrollLink>
-      <ScrollLink to='Suggested-products' smooth={true} offset={100} className="hover:text-white">Suggestions</ScrollLink>
-      <ScrollLink to='Lates-products' offset={50} smooth={true} className="hover:text-white">Latest products</ScrollLink>
+      <ScrollLink to='Shirts' offset={100} smooth={true} className="hover:text-white cursor-pointer">T-shirt</ScrollLink>
+      <ScrollLink to='Shirts' offset={100} smooth={true} className="hover:text-white cursor-pointer">Shirt</ScrollLink>
+      <ScrollLink to='Offers' smooth={true} offset={100} className="hover:text-white cursor-pointer">Discounted products</ScrollLink>
+      <ScrollLink to='Shoes' smooth={true} className="hover:text-white cursor-pointer">Shoes</ScrollLink>
+      <ScrollLink to='Suggested-products' smooth={true} offset={100} className="hover:text-white cursor-pointer">Suggestions</ScrollLink>
+      <ScrollLink to='Lates-products' offset={50} smooth={true} className="hover:text-white cursor-pointer">Latest products</ScrollLink>
     </nav>
   )
 }

@@ -43,7 +43,11 @@ const Latest_products = () => {
           <Pattern/>
           <div className='lg:flex lg:flex-row-reverse'>
               {/* content-text */}
-              <div className='w-full mb-[20px] lg:mb-0 lg:w-5/12 lg:pl-[30px] lg:pt-[20px]'>
+              <div className='w-full mb-[20px] lg:mb-0 lg:w-5/12 lg:pl-[30px] lg:pt-[20px]'
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="500"
+              >
                 <div className='mb-[20px]'>
                     <Primary_Title text='Latest Products'/>
                     <p className='text-14 text-black-100 font-robotoReqular'>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad.</p>
@@ -59,7 +63,11 @@ const Latest_products = () => {
                 </div>
               </div>
               {/* slider */}
-              <div className='w-full h-full lg:w-7/12'>
+              <div className='w-full h-full lg:w-7/12'
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="800"
+              >
                     <Swiper 
                         modules={[Navigation]} {...params}
                         navigation={{

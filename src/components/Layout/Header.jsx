@@ -53,22 +53,22 @@ const Header_nav = () => {
             <Link href='/contact-us' className='hover:text-gray-100'>Contact Us</Link>
           </li>
           <li>
-            <ScrollLink to='Shirts' offset={100} smooth={true} className='hover:text-gray-100'>T-shirt</ScrollLink>
+            <ScrollLink to='Shirts' offset={100} smooth={true} className='hover:text-gray-100 cursor-pointer'>T-shirt</ScrollLink>
           </li>
           <li>
-            <ScrollLink to='Shirts' offset={100} smooth={true} className='hover:text-gray-100'>Shirt</ScrollLink>
+            <ScrollLink to='Shirts' offset={100} smooth={true} className='hover:text-gray-100 cursor-pointer'>Shirt</ScrollLink>
           </li>
           <li>
-            <ScrollLink to='Offers' smooth={true} offset={100}  className='hover:text-gray-100'>Discounted products</ScrollLink>
+            <ScrollLink to='Offers' smooth={true} offset={100}  className='hover:text-gray-100 cursor-pointer'>Discounted products</ScrollLink>
           </li>
           <li>
-            <ScrollLink to='Shoes' smooth={true} className='hover:text-gray-100'>Shoes</ScrollLink>
+            <ScrollLink to='Shoes' smooth={true} className='hover:text-gray-100 cursor-pointer'>Shoes</ScrollLink>
           </li>
           <li>
-            <ScrollLink to='Suggested-products' smooth={true} offset={100} className='hover:text-gray-100'>Suggestions</ScrollLink>
+            <ScrollLink to='Suggested-products' smooth={true} offset={100} className='hover:text-gray-100 cursor-pointer'>Suggestions</ScrollLink>
           </li>
           <li>
-            <ScrollLink to='Lates-products' offset={50} smooth={true} className='hover:text-gray-100'>Latest products</ScrollLink>
+            <ScrollLink to='Lates-products' offset={50} smooth={true} className='hover:text-gray-100 cursor-pointer'>Latest products</ScrollLink>
           </li>
         </ul>
       </nav>

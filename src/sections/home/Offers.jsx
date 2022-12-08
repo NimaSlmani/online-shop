@@ -83,8 +83,8 @@ const Slider_lg = () => {
     }
     return (
         <div className='hidden pt-[30px] relative lg:block'>
-            <p className='left-[25.5%] absolute text-14 font-robotoReqular'>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod <br/> Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad.</p>
-            <div className='absolute right-0 z-20'>
+            <p className='left-[25.5%] absolute text-14 font-robotoReqular' data-aos="fade-right">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod <br/> Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad.</p>
+            <div className='absolute right-0 z-20' data-aos="fade-down">
                 <div className='mb-[15px] arrow_button' ref={navigationPrevRef}><BsChevronUp/></div>
                 <div className='arrow_button' ref={navigationNextRef}><BsChevronDown/></div>
             </div>
@@ -126,7 +126,9 @@ const Offers = () => {
     <Container pId='Offers'>
         <Pattern/>
         <ModelingImage/>
-        <Primary_Title text='Special Sale Of Men&apos;s Shirts'/>        
+        <div data-aos="fade-right">
+            <Primary_Title text='Special Sale Of Men&apos;s Shirts'/>        
+        </div>
         <Slider_sm_md/>
         <Slider_lg/>
     </Container>

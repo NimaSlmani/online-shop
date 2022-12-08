@@ -61,8 +61,8 @@ const Shirts = () => {
   return (
     <Container bg='gradient_white_yellow' pId='Shirts'>
         <div className='lg:flex'>
-          <div className='pb-[100px] md:pb-[150px] lg:pb-0 lg:w-6/12 lg:pr-[50px]'><Section/></div>
-          <div className='pt-[100px] md:pt-[150px] lg:pt-0 lg:w-6/12 lg:pl-[50px]'><Section/></div>
+          <div className='pb-[100px] md:pb-[150px] lg:pb-0 lg:w-6/12 lg:pr-[50px]' data-aos="fade-right"><Section/></div>
+          <div className='pt-[100px] md:pt-[150px] lg:pt-0 lg:w-6/12 lg:pl-[50px]' data-aos="fade-left"><Section/></div>
         </div>
     </Container>
   )

@@ -44,7 +44,11 @@ const Shoes = () => {
         <Pattern/>
         <div className='lg:flex lg:items-stretch'>
             {/* content-text */}
-            <div className='w-full mb-[20px] lg:mb-0 lg:w-5/12 lg:pr-[30px]'>
+            <div className='w-full mb-[20px] lg:mb-0 lg:w-5/12 lg:pr-[30px]'
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="500"
+            >
                 <div className='mb-[20px]'>
                     <Primary_Title text='All Kinds Of Shoes And Linen'/>
                     <h4 className='text-14 font-robotoMedium text-pink-500'>Brands :</h4>
@@ -66,7 +70,11 @@ const Shoes = () => {
                 </div>
             </div>
             {/* slider */}
-            <div className='w-full lg:w-7/12'>
+            <div className='w-full lg:w-7/12'
+                data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-duration="800"
+            >
                 <Swiper 
                     className='h-full'
                     modules={[Navigation]} {...params}
