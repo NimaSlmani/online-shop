@@ -36,8 +36,8 @@ const Suggested_products = () => {
   }
   return (
     <Container pId='Suggested-products'>
-        <Image src='/images/bg-image.png' width={100}  height={100} className='bg-red-500 w-full h-full absolute left-0 top-0 z-0' alt='uiminut'/>
-        <div className='bg-pruple-100 w-full h-full absolute left-0 top-0 z-0'/>
+        <Image src='/images/bg-image.png' width={900}  height={900} className='bg-red-500 w-full h-full absolute left-0 top-0 z-0' alt='uiminut'/>
+        <div className='w-full h-full absolute left-0 top-0 z-0 bg-pruple-100'/>
         <div className='text-center pb-[30px] z-20 relative'
             data-aos="fade-down"
             data-aos-easing="linear"

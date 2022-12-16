@@ -1,5 +1,5 @@
 import { useLayoutEffect,useState } from "react"
-import {BsTwitter,BsYoutube,BsInstagram,BsFillPlayFill,BsChevronUp} from "react-icons/bs"
+import {BsTwitter,BsYoutube,BsInstagram,BsFillPlayFill} from "react-icons/bs"
 import Image from "next/image"
 import Link from "next/link"
 

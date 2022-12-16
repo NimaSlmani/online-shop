@@ -19,6 +19,7 @@ const Layout = ({children,title}) => {
         <Menu/>
         <div className='w-full overflow-x-hidden'>
           <Header/>
+          
           {children}
           <Footer/>
         </div>
