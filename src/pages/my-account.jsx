@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux"
+// import { useSelector } from "react-redux"
 import {BsHandbag} from 'react-icons/bs'
 
 import Link from "next/link"
@@ -44,8 +44,8 @@ const Bg_Image = () => {
 const Bg_overlay = () => <div className="absolute w-full top-[130px] bottom-0 bg-white hidden left-0 lg:block"/>
 
 const myAccount = () => {
-  let {login_page_check} = useSelector(state=>state.style)
-
+  // let {login_page_check} = useSelector(state=>state.style)
+  let login_page_check = false
   return (
     <>
     <Menu/>
