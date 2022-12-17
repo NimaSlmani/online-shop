@@ -28,6 +28,9 @@ module.exports = {
           300 : '#E8E8E8',
           400 : '#EDE1FF',
           500 : '#F5EEFF',
+          600 : '#F5F5F5',
+          700 : '#9A9A9A',
+          800 : '#e6e5e5',
           alpha : {
             100 : '#ffffff4d'
           }

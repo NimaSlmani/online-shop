@@ -6,7 +6,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Menu from './Menu'
 
-const Layout = ({children,title}) => {
+const Layout = ({children,title,routes}) => {
   let { open_sidebar } = useSelector(state => state.style)
   return (
     <>
@@ -18,8 +18,7 @@ const Layout = ({children,title}) => {
         </Head>
         <Menu/>
         <div className='w-full overflow-x-hidden'>
-          <Header/>
-          
+          <Header routes={routes}/>
           {children}
           <Footer/>
         </div>

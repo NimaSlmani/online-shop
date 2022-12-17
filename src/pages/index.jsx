@@ -1,6 +1,7 @@
 import { useState,useEffect } from 'react'
 
 import { BsChevronUp } from 'react-icons/bs'
+import { routesHomePage } from '../helperFunction/routes'
 
 import Layout from '../components/Layout/Layout'
 import Screen from '../sections/home/Screen'
@@ -26,7 +27,7 @@ let Home = () => {
   return (
     <div>
       <div className={`top_scroll_button ${showTopBtn ? 'opacity-100 z-30 bottom-[105px] md:bg-gray-200 md:bottom-[140px] lg:bottom-[80px]' : 'opacity-0 z-0 bottom-[100px]'} `} onClick={()=>window.scrollTo({ top: 0, behavior: 'smooth' })}><BsChevronUp/></div>
-      <Layout title='Purple shopping cart'>
+      <Layout title='Purple shopping cart' routes={routesHomePage}>
         <Screen/>
         <Quick_links/>        
         <Latest_products/>

@@ -9,6 +9,7 @@ import Image from "next/image"
 import {BsTwitter,BsYoutube,BsInstagram,BsFillTelephoneFill,BsWhatsapp,BsTelegram} from "react-icons/bs"
 import {FaEnvelopeOpenText} from "react-icons/fa"
 
+import { routesPages } from "../helperFunction/routes"
 
 const SocialMedia = () => <ul className="flex">
                             <li>
@@ -81,7 +82,7 @@ const Content = () => {
 const contact = () => {
   return (
     
-    <Layout title="contact us">
+    <Layout title="contact us" routes={routesPages}>
       <Content/>
       {/* <div className="h-screen gradient-pink border-b-[1.5px] border-pink-400 pt-[150px] pb-[30px] px-[30px]  md:pb-[100px] md:px-[50px] md:pt-[250px] lg:pt-[200px] lg:pb-[70px]">
         <div className="items-center lg:flex">
